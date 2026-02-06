@@ -13,16 +13,14 @@ Map<String, dynamic> informasiTambahan = {
   'anak_ke': 2,
 };
 
+/// fungsi untuk menampilkan biodata
 void tampilkanBiodata() {
-  Map<String, dynamic> biodata = {
-    'nama': nama,
-    'umur': umur,
-    'tinggiBadan': tinggiBadan,
-    'status': statusAktif,
-    'bukuFavorit': bukuFavorit,
-    'informasiTambahan': informasiTambahan,
-  };
-  print(biodata);
+  print("Nama: $nama");
+  print("Umur: $umur");
+  print("Tinggi Badan: $tinggiBadan");
+  print("Status Aktif: $statusAktif");
+  print("Daftar Buku Favorit: $bukuFavorit");
+  print("Informasi Tambahan: $informasiTambahan");
 }
 
 void main() {
