@@ -1,7 +1,8 @@
 String nama = "Karen"; //variable untuk nama anggota klub
 int umur = 27; //variable untuk umur anggota klub
 double tinggiBadan = 187.3; //variable untuk tinggi badan anggota klub
-bool statusAktif = true; // variable untuk status keanggotaan
+bool status = false; // variable untuk status keanggotaan
+String statusAktif = status ? "Aktif" : "Nonaktif";
 
 /// variable untuk list buku favorit anggota//variable untuk status keanggotaan
 List<String> bukuFavorit = ['Harry Potter', 'Narnia'];
