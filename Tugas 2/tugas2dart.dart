@@ -1,23 +1,29 @@
 import 'dart:io';
 
 void kelulusan() {
-  stdout.write("Masukkan Nilai UTS");
+  /// Input Nilai UTS
+  stdout.write("Masukkan Nilai UTS: ");
   String? inputUts = stdin.readLineSync();
   int uts = int.parse(inputUts ?? "0");
 
-  stdout.write("Masukkan Nilai UAS");
+  /// Input Nilai UAS
+  stdout.write("Masukkan Nilai UAS: ");
   String? inputUas = stdin.readLineSync();
   int uas = int.parse(inputUas ?? "0");
 
-  stdout.write('Masukkan Jumlah Kehadiran dalam Percent');
+  /// Input % Kehadiran
+  stdout.write('Masukkan Jumlah Kehadiran dalam Percent: ');
   String? hadir = stdin.readLineSync();
   int kehadiran = int.parse(hadir ?? "0");
 
   final int nilaiUts = uts;
   final int nilaiUas = uas;
-  final double rata = (nilaiUts + nilaiUas) / 2;
-  final double kehadiranSiswa = kehadiran / 100;
+  final double rata =
+      (nilaiUts + nilaiUas) / 2; //variable rata2 Nilai UTS dan UAS
+  final double kehadiranSiswa =
+      kehadiran / 100; //variable kehadiran dalam persen
 
+  /// Operator untuk menentukan kelulusan
   if ((rata >= 70) &&
       (kehadiranSiswa >= 0.75) &&
       (nilaiUts >= 60) &&
